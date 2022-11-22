@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_titleFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_createCardFragment2"
+            app:destination="@id/createCardFragment2" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -27,4 +30,9 @@
         android:name="com.example.youdo.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/createCardFragment2"
+        android:name="com.example.youdo.CreateCardFragment"
+        android:label="fragment_create_card"
+        tools:layout="@layout/fragment_create_card" />
 </navigation>

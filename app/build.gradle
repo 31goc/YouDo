@@ -6,7 +6,7 @@ apply plugin: 'kotlin-kapt'
 
 android {
     namespace 'com.example.youdo'
-    compileSdk 33
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId 'com.example.android.navigation'
@@ -46,6 +46,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "com.google.android.material:material:1.2.1"
     implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
 
 }
 
