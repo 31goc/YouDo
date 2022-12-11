@@ -12,4 +12,18 @@
     <string name="your_task">Your Task</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_back_log_in_to_continue">Welcome back! Log in to continue</string>
+    <string name="youdo">YouDo</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="log_in">Log In</string>
+    <string name="new_user">New User</string>
+    <string name="we_re_happy_to_see_you_join">We\'re happy to see you join</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_my_password">Forgot Password</string>
+    <string name="no_worries_your_password_will_be_recovered">No worries, your password will be recovered</string>
+    <string name="enter_your_registered_email">Enter your registered email</string>
+    <string name="click_here_to_recover">Click Here to Recover</string>
+    <string name="go_back_to_login_screen">Go back to Login screen</string>
 </resources>
