@@ -3,68 +3,85 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/titleFragment">
+    app:startDestination="@id/loginFragment">
 
-    <fragment
-        android:id="@+id/titleFragment"
-        android:name="com.example.youdo.TitleFragment"
-        android:label="TitleFragment"
-        tools:layout="@layout/fragment_title">
-        <action
-            android:id="@+id/action_titleFragment_to_aboutFragment"
-            app:destination="@id/aboutFragment" />
-        <action
-            android:id="@+id/action_titleFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
-        <action
-            android:id="@+id/action_titleFragment_to_createCardFragment2"
-            app:destination="@id/createCardFragment2" />
-        <action
-            android:id="@+id/action_titleFragment_to_yourTaskFragment"
-            app:destination="@id/yourTaskFragment" />
-    </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.youdo.AboutFragment"
         android:label="fragment_about"
-        tools:layout="@layout/fragment_about" >
-        <action
-            android:id="@+id/action_aboutFragment_to_titleFragment"
-            app:destination="@id/titleFragment"
-            app:popUpTo="@id/titleFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.youdo.SettingsFragment"
         android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" >
-        <action
-            android:id="@+id/action_settingsFragment_to_titleFragment"
-            app:destination="@id/titleFragment"
-            app:popUpTo="@id/titleFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/createCardFragment2"
         android:name="com.example.youdo.CreateCardFragment"
         android:label="fragment_create_card"
-        tools:layout="@layout/fragment_create_card" >
-        <action
-            android:id="@+id/action_createCardFragment2_to_titleFragment"
-            app:destination="@id/titleFragment"
-            app:popUpTo="@id/titleFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        tools:layout="@layout/fragment_create_card" />
     <fragment
         android:id="@+id/yourTaskFragment"
         android:name="com.example.youdo.YourTaskFragment"
         android:label="fragment_your_task"
-        tools:layout="@layout/fragment_your_task" >
+        tools:layout="@layout/fragment_your_task" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.youdo.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
         <action
-            android:id="@+id/action_yourTaskFragment_to_titleFragment"
-            app:destination="@id/titleFragment"
-            app:popUpTo="@id/titleFragment"
-            app:popUpToInclusive="true" />
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.youdo.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.youdo.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_titleFragment2"
+            app:destination="@id/titleFragment2" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/titleFragment2"
+        android:name="com.example.youdo.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment2_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_titleFragment2_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_titleFragment2_to_yourTaskFragment"
+            app:destination="@id/yourTaskFragment" />
+        <action
+            android:id="@+id/action_titleFragment2_to_updateCardFragment"
+            app:destination="@id/updateCardFragment" />
+        <action
+            android:id="@+id/action_titleFragment2_to_createCardFragment2"
+            app:destination="@id/createCardFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateCardFragment"
+        android:name="com.example.youdo.UpdateCardFragment"
+        android:label="fragment_update_card"
+        tools:layout="@layout/fragment_update_card" />
 </navigation>
