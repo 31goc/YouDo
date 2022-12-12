@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "510627457001",
+    "project_id": "youdo-a6543",
+    "storage_bucket": "youdo-a6543.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510627457001:android:bb5a02f10ada28c9260d78",
+        "android_client_info": {
+          "package_name": "com.example.youdo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510627457001-h8oktpal53dt6dpk5cta2hkhqu0fjchi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy6WDsBNBLIOEx-wnpzC7QNfGVqdFxIZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510627457001-h8oktpal53dt6dpk5cta2hkhqu0fjchi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
